@@ -80,7 +80,9 @@ const MapComponent = () => {
       </div>
 
       <LoadScript 
-        googleMapsApiKey="AIzaSyBtUwkR24meKiBn9XjWynZih_HERA3xwLQ"
+        googleMapsApiKey={process.env.REACT_APP_API_KEY}
+
+
         loadingElement={<div className={styles.loadingOverlay}>Loading map...</div>}
       >
         <GoogleMap
